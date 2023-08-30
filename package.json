@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "prepare": "husky install",
     "prettier": "prettier '**/*.{js,jsx,ts,tsx}' --write",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color"
