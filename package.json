@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "format": "prettier --write **/*.{ts,tsx,css,mdx}",
-    "lint": "eslint . --ext ts --ext tsx",
-    "lint:fix": "eslint . --ext ts --ext tsx --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier": "prettier '**/*.{js,jsx,ts,tsx}' --write",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src --color"
   },
   "dependencies": {
+    "lint-staged": "^14.0.1",
     "next": "13.4.19",
     "postcss": "8.4.28",
     "react": "18.2.0",
@@ -34,10 +31,19 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0.0",
     "prettier": "3.0.3"
   },
-  "scripts": {
-    "prepare": "husky install" 
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,js,jsx}": [
+      "npm run prettier",
+      "npm run lint",
+      "git add"
+    ]
   }
 }
