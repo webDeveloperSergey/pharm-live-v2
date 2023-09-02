@@ -27,7 +27,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['@next/eslint-plugin-next'],
+  plugins: ['@next/eslint-plugin-next', 'react'],
   rules: {
     '@typescript-eslint/no-shadow': 0,
     '@typescript-eslint/consistent-type-imports': [
