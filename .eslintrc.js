@@ -34,13 +34,8 @@ module.exports = {
       'error',
       { prefer: 'type-imports', disallowTypeAnnotations: false },
     ],
-    // 'react/function-component-definition': [
-    //   2,
-    //   {
-    //     namedComponents: 'arrow-function',
-    //     unnamedComponents: 'arrow-function',
-    //   },
-    // ],
+    'react/function-component-definition': 0,
+    'arrow-body-style': ['error', 'always'],
     'react/prop-types': 0,
     'react/react-in-jsx-scope': 0,
     'react/jsx-props-no-spreading': 0,

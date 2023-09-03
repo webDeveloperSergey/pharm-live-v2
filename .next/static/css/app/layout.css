@@ -388,6 +388,9 @@ video {
 [hidden] {
   display: none;
 }
+  html {
+    font-family: Roboto, system-ui, sans-serif;
+  }
 
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
@@ -491,6 +494,9 @@ video {
 .flex {
   display: flex;
 }
+.inline-flex {
+  display: inline-flex;
+}
 .min-h-screen {
   min-height: 100vh;
 }
@@ -500,34 +506,80 @@ video {
 .items-center {
   align-items: center;
 }
+.justify-center {
+  justify-content: center;
+}
 .justify-between {
   justify-content: space-between;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.border {
+  border-width: 1px;
+}
+.border-primary-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(64 183 91 / var(--tw-border-opacity));
+}
+.bg-primary-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 183 91 / var(--tw-bg-opacity));
+}
+.bg-transparent {
+  background-color: transparent;
 }
 .p-24 {
   padding: 6rem;
 }
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+.py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+.font-medium {
+  font-weight: 500;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-primary-500 {
+  --tw-text-opacity: 1;
+  color: rgb(64 183 91 / var(--tw-text-opacity));
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.hover\:border-primary-100:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 207 125 / var(--tw-border-opacity));
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hover\:bg-primary-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 207 125 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-primary-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 183 91 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
