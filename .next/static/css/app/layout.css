@@ -14,7 +14,7 @@
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
-  border-color: #e5e7eb; /* 2 */
+  border-color: currentColor; /* 2 */
 }
 
 ::before,
@@ -497,11 +497,35 @@ video {
 .inline-flex {
   display: inline-flex;
 }
-.min-h-screen {
-  min-height: 100vh;
+.h-24 {
+  height: 6rem;
 }
-.flex-col {
-  flex-direction: column;
+.h-screen {
+  height: 100vh;
+}
+.h-\[90px\] {
+  height: 90px;
+}
+.h-\[92px\] {
+  height: 92px;
+}
+.h-\[95px\] {
+  height: 95px;
+}
+.h-\[94x\] {
+  height: 94x;
+}
+.h-\[94px\] {
+  height: 94px;
+}
+.w-\[205px\] {
+  width: 205px;
+}
+.w-\[276px\] {
+  width: 276px;
+}
+.w-full {
+  width: 100%;
 }
 .items-center {
   align-items: center;
@@ -518,9 +542,32 @@ video {
 .border {
   border-width: 1px;
 }
+.border-l {
+  border-left-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.border-b-\[1px\] {
+  border-bottom-width: 1px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+.border-l-2 {
+  border-left-width: 2px;
+}
 .border-primary-500 {
   --tw-border-opacity: 1;
   border-color: rgb(64 183 91 / var(--tw-border-opacity));
+}
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 248 248 / var(--tw-border-opacity));
+}
+.bg-\[\#F8F8F8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
 }
 .bg-primary-500 {
   --tw-bg-opacity: 1;
@@ -529,8 +576,16 @@ video {
 .bg-transparent {
   background-color: transparent;
 }
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .p-24 {
   padding: 6rem;
+}
+.px-28 {
+  padding-left: 7rem;
+  padding-right: 7rem;
 }
 .px-8 {
   padding-left: 2rem;
@@ -544,16 +599,23 @@ video {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
 }
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.text-\[15px\] {
+  font-size: 15px;
+}
 .font-medium {
   font-weight: 500;
-}
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .text-primary-500 {
   --tw-text-opacity: 1;
   color: rgb(64 183 91 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .transition-all {
   transition-property: all;
@@ -563,9 +625,9 @@ video {
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-.hover\:border-primary-100:hover {
+.hover\:border-primary-500:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(100 207 125 / var(--tw-border-opacity));
+  border-color: rgb(64 183 91 / var(--tw-border-opacity));
 }
 
 .hover\:bg-primary-100:hover {

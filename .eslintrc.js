@@ -1,3 +1,5 @@
+const { error } = require('console')
+
 module.exports = {
   extends: [
     'airbnb',
@@ -56,16 +58,16 @@ module.exports = {
       2,
       { extensions: ['.js', '.jsx', '.ts', '.tsx'] },
     ],
-    'react/jsx-sort-props': [
-      2,
-      {
-        callbacksLast: true,
-        shorthandFirst: true,
-        multiline: 'last',
-        ignoreCase: true,
-        reservedFirst: true,
-      },
-    ],
+    // 'react/jsx-sort-props': [
+    //   2,
+    //   {
+    //     callbacksLast: true,
+    //     shorthandFirst: true,
+    //     multiline: 'last',
+    //     ignoreCase: true,
+    //     reservedFirst: true,
+    //   },
+    // ],
     'import/order': 0,
     'import/extensions': 0,
     'import/no-extraneous-dependencies': 0,
