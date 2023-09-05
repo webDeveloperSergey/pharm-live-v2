@@ -68,6 +68,7 @@ module.exports = {
     //     reservedFirst: true,
     //   },
     // ],
+    'sort-keys': 0,
     'import/order': 0,
     'import/extensions': 0,
     'import/no-extraneous-dependencies': 0,
